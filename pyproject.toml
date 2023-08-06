@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "litterkicker"
+version = "0.1.0"
+description = ""
+authors = ["Chad Bowman <chad.bowman0@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pylitterbot = "^2023.4.3"
+pytest = "^7.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
