@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "litterkicker"
 version = "0.1.0"
-description = "Automation tool for the LitterRobot 2"
+description = "Automation tool for the LitterRobot 3"
 authors = ["Chad Bowman <chad.bowman0+github@gmail.com>"]
 readme = "README.md"
 
