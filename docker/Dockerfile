@@ -5,4 +5,4 @@ RUN pip install poetry && \
   poetry config virtualenvs.create false && \
   poetry install --no-interaction --no-ansi
 COPY . /app/
-ENTRYPOINT ["poetry", "run", "python", "__main__.py"]
+ENTRYPOINT ["poetry", "run", "python", "."]
