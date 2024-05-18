@@ -33,6 +33,7 @@ aws_region = "us-west-2"
 Once created, you can use the output instructions on how to connect to your instance using ssh. From the instance, checking the state of the container is easy:
 
 ```bash
+sudo su -
 docker ps
 docker logs -f $(docker ps | grep 'chadbowman0/litterkicker' | grep -Eo '^\w+')
 ```
@@ -52,7 +53,8 @@ Running it locally with python is possible assuming you are using Python 3.11 an
 ```bash
 export WHISKER_USERNAME=yourusername
 export WHISKER_PASSWORD=yourpassword
-poetry shell
+python -m venv venv && source venv/bin/activate
+pip install poetry
 poetry install
 poetry run python .
 ```
